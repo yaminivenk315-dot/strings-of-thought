@@ -37,7 +37,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
   font-family:'Work Sans',sans-serif;font-size:1rem;font-weight:400;
   line-height:1.1;letter-spacing:0;-webkit-font-smoothing:antialiased; }
 
-/* ── COMPACT PILL NAV ── */
+/* ââ COMPACT PILL NAV ââ */
 #compact-nav {
   position:fixed;bottom:18px;left:50%;transform:translateX(-50%);
   z-index:110;
@@ -81,7 +81,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .cnav-search svg { width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8; }
 .nav-btn { display:none; }
 
-/* ── VIEWS ── */
+/* ââ VIEWS ââ */
 .view { position:fixed;inset:0;opacity:0;pointer-events:none;transition:opacity .4s ease; }
 .view.active { opacity:1;pointer-events:all; }
 #view-map { background:var(--bg); }
@@ -89,7 +89,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 #view-article.article-mode { padding-left:50px; transition:padding-left .35s; }
 #map-canvas { position:absolute;inset:0;width:100%;height:100%;display:block;cursor:default; }
 
-/* ── LEGEND ── */
+/* ââ LEGEND ââ */
 #map-legend {
   position:fixed;bottom:78px;left:50%;transform:translateX(-50%);
   display:none;align-items:center;gap:14px;z-index:50;
@@ -110,7 +110,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 #map-legend:hover .l-item       { opacity:0.75;transition:opacity .22s; }
 #map-legend:hover .l-item:hover { opacity:1; }
 
-/* ── GUIDE BUTTON ── */
+/* ââ GUIDE BUTTON ââ */
 #pos-guide-btn {
   position:fixed;bottom:calc(var(--nav-h) + 14px);left:16px;
   background:none;border:1px solid var(--border);
@@ -123,7 +123,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 #pos-guide-btn.on { color:var(--text);border-color:rgba(100,160,120,.35);background:rgba(100,160,120,.07); }
 #pos-guide-btn.map-visible { display:block; }
 
-/* ── HOVER CARD ── */
+/* ââ HOVER CARD ââ */
 #hover-card { position:fixed;z-index:200;width:272px;
   background:rgba(5,32,22,0.97);border:1px solid var(--border);border-radius:14px;
   padding:16px 18px;backdrop-filter:blur(20px);
@@ -164,7 +164,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .card-read:hover { color:var(--text); }
 .card-read svg { width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.8; }
 
-/* ── ARCHIVE ── */
+/* ââ ARCHIVE ââ */
 #view-archive { overflow-y:auto;background:var(--bg);padding-bottom:72px; }
 .archive-inner { max-width:1040px;margin:0 auto;padding:44px 28px 20px; }
 .archive-title { font-family:'New Spirit',serif;font-weight:300;font-size:2.4rem;
@@ -189,9 +189,9 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .archive-card .card-date  { margin-bottom:9px; }
 .archive-card .card-excerpt { font-size:.9rem;color:var(--text-dim);line-height:1.4; }
 
-/* ── ARTICLE VIEW ── */
+/* ââ ARTICLE VIEW ââ */
 #view-article { overflow-y:auto;background:var(--bg);padding-bottom:72px; }
-.article-inner { max-width:900px;margin:0 auto;padding:48px 32px 20px; }
+.article-inner { max-width:900px;margin:0 auto;padding:48px 48px 20px; }
 .article-back { display:inline-flex;align-items:center;gap:6px;color:var(--text-faint);
   font-size:.85rem;cursor:pointer;margin-bottom:36px;background:none;border:none;padding:0;transition:color .2s; }
 .article-back:hover { color:var(--text); }
@@ -201,10 +201,10 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
   line-height:1.05;color:var(--text);margin-bottom:10px; }
 .article-date { font-size:.85rem;color:var(--text-faint);margin-bottom:34px;letter-spacing:.02em; }
 
-/* ─── BODY TEXT ───────────────────────────────────────────────────
+/* âââ BODY TEXT âââââââââââââââââââââââââââââââââââââââââââââââââââ
    font-size: 0.9rem, but never below 14px for readability on mobile.
    line-height: 1.4 (tighter than before, responsive too).
-──────────────────────────────────────────────────────────────────── */
+ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 .article-body {
   font-family:'Work Sans',sans-serif;
   font-weight:400;
@@ -220,9 +220,9 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .article-body h2 { font-family:'New Spirit',serif;font-weight:300;font-size:1.6rem;
   color:var(--text);margin:2rem 0 0.6rem;line-height:1.1; }
 
-/* ─── ARTICLE: LINKS ─────────────────────────────────────────────
+/* âââ ARTICLE: LINKS âââââââââââââââââââââââââââââââââââââââââââââ
    Use <a href="https://..." target="_blank">link text</a> in content
-──────────────────────────────────────────────────────────────────── */
+ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 .article-body a {
   color:var(--text);
   text-decoration:underline;
@@ -232,11 +232,11 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 }
 .article-body a:hover { text-decoration-color:var(--text-dim); }
 
-/* ─── ARTICLE: FULL-WIDTH IMAGE ──────────────────────────────────
+/* âââ ARTICLE: FULL-WIDTH IMAGE ââââââââââââââââââââââââââââââââââ
    Use: <img class="article-img" src="filename.jpg" alt="description">
    Put image files in the same folder as this HTML file.
    Or use a web URL: src="https://example.com/image.jpg"
-──────────────────────────────────────────────────────────────────── */
+ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 .article-img {
   width:100%;height:auto;display:block;
   border-radius:8px;margin:1.2rem 0;
@@ -264,11 +264,11 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
   padding-bottom:10px;border-bottom:1px solid rgba(100,160,120,.1);
 }
 
-/* ─── ARTICLE: PHOTO GRID ────────────────────────────────────────
+/* âââ ARTICLE: PHOTO GRID ââââââââââââââââââââââââââââââââââââââââ
    Use: <div class="photo-grid"> then <img> tags inside.
    Default: 3 columns. Add class "photo-grid-2" for 2 columns.
    Images are cropped to a square. Remove aspect-ratio for natural size.
-──────────────────────────────────────────────────────────────────── */
+ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 .photo-grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -286,11 +286,11 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
   .photo-grid-2 img        { aspect-ratio:3/2; }
 }
 
-/* ─── ARTICLE: JOURNAL / WEEKLY LOG FORMAT ───────────────────────
+/* âââ ARTICLE: JOURNAL / WEEKLY LOG FORMAT âââââââââââââââââââââââ
    Use .journal-period for season/month headings.
    Use .journal-entry for each individual dated entry.
    See the journal template article for exact structure.
-──────────────────────────────────────────────────────────────────── */
+ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 .journal-period {
   font-family:'New Spirit',serif;font-weight:300;
   font-size:1.25rem;color:var(--text);
@@ -327,7 +327,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .r-dot { width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:4px;vertical-align:middle; }
 .related-title { font-family:'New Spirit',serif;font-weight:300;font-size:.95rem;color:var(--text);line-height:1.3;margin-top:6px; }
 
-/* ── SEARCH ── */
+/* ââ SEARCH ââ */
 #search-overlay { position:fixed;inset:0;background:rgba(6,43,31,.97);z-index:300;
   display:flex;flex-direction:column;align-items:center;padding-top:110px;
   opacity:0;pointer-events:none;transition:opacity .2s;backdrop-filter:blur(14px); }
@@ -348,7 +348,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 .s-title { font-family:'New Spirit',serif;font-weight:300;font-size:1rem;color:var(--text); }
 .s-meta  { font-size:.75rem;color:var(--text-faint);margin-top:2px; }
 
-/* ── SIDE NAV (appears when reading an article) ── */
+/* ââ SIDE NAV (appears when reading an article) ââ */
 #side-nav {
   position:fixed;left:0;top:50%;transform:translateY(-50%);
   display:flex;flex-direction:column;gap:3px;
@@ -383,7 +383,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:rgba(100,160,120,.14);border-radius:3px; }
 @media (max-width:600px) {
-  .archive-inner,.article-inner { padding-left:12px;padding-right:12px; }
+  .archive-inner,.article-inner { padding-left:16px;padding-right:16px; }
   #compact-nav { display:flex !important; }
   .article-title { font-size:2.2rem; }
   .articles-grid { grid-template-columns:1fr; }
@@ -471,29 +471,29 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 </div>
 
 <script>
-// ════════════════════════════════════════════════════════════════════
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 //
-//   STRINGS OF THOUGHTS — GUIDE & ARTICLE TEMPLATES
+//   STRINGS OF THOUGHTS â GUIDE & ARTICLE TEMPLATES
 //
-//   ┌────────────────────────────────────────────────────────────┐
-//   │  QUICK REFERENCE                                            │
-//   │  • Add article  → find ARTICLES_RAW below, copy template   │
-//   │  • Move article → change its col + row numbers             │
-//   │  • Position map → click "Guide" button, hover to read col/row│
-//   │  • Drag nodes   → reshapes path live (reset on refresh)    │
-//   └────────────────────────────────────────────────────────────┘
+//   ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+//   â  QUICK REFERENCE                                            â
+//   â  â¢ Add article  â find ARTICLES_RAW below, copy template   â
+//   â  â¢ Move article â change its col + row numbers             â
+//   â  â¢ Position map â click "Guide" button, hover to read col/rowâ
+//   â  â¢ Drag nodes   â reshapes path live (reset on refresh)    â
+//   ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 //
-//   ARTICLE TYPES — THREE TEMPLATES ARE IN THE LIST BELOW:
-//   ─────────────────────────────────────────────────────────────
-//   Article id:14  →  Standard text article  (with image + links)
-//   Article id:15  →  Journal / weekly log   (dated progress entries)
-//   Article id:16  →  Photo essay            (responsive image grid)
-//   ─────────────────────────────────────────────────────────────
+//   ARTICLE TYPES â THREE TEMPLATES ARE IN THE LIST BELOW:
+//   âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+//   Article id:14  â  Standard text article  (with image + links)
+//   Article id:15  â  Journal / weekly log   (dated progress entries)
+//   Article id:16  â  Photo essay            (responsive image grid)
+//   âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 //   These are real working examples. Edit them with your own content.
 //   Copy their content: structure as starting points for new articles.
 //
-//   HOW TO ADD AN ARTICLE — STEP BY STEP
-//   ──────────────────────────────────────
+//   HOW TO ADD AN ARTICLE â STEP BY STEP
+//   ââââââââââââââââââââââââââââââââââââââ
 //   1. Use Cmd+F / Ctrl+F to search: "ADD YOUR ARTICLE BELOW"
 //   2. After the closing } of the last article, add a comma + new article
 //   3. Fill in: id (next number), col/row (1-10 grid), categories, 
@@ -503,7 +503,7 @@ html,body { width:100%;height:100%;overflow:hidden;background:var(--bg);color:va
 //   THE GRID: col 1=left, col 10=right. row 1=top, row 10=bottom.
 //   Click "Guide" on the map to see live col/row as you hover.
 //
-// ════════════════════════════════════════════════════════════════════
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 
 const CAT_COLORS   = { Research:'#E13067', Reflections:'#A8C1BD', Lectures:'#FE7D14', Projects:'#979E13' };
 const CAT_LINE_COL = { Research:'#a81c48', Reflections:'#6b918d', Lectures:'#b85500', Projects:'#606208' };
@@ -511,12 +511,12 @@ const CATEGORIES   = ['Research','Reflections','Lectures','Projects'];
 
 function colRowToRxRy(col,row){ return{rx:(col-1)/9,ry:(row-1)/9}; }
 
-// ─── ARTICLES ─────────────────────────────────────────────────────
+// âââ ARTICLES âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 //
-//  ┌──── TEMPLATE ARTICLES — id 14, 15, 16 ───────────────────────┐
-//  │  Three working examples, one per article type.                │
-//  │  Edit with your real content, or use as copy-paste templates. │
-//  └────────────────────────────────────────────────────────────────┘
+//  âââââ TEMPLATE ARTICLES â id 14, 15, 16 ââââââââââââââââââââââââ
+//  â  Three working examples, one per article type.                â
+//  â  Edit with your real content, or use as copy-paste templates. â
+//  ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 //
 const ARTICLES_RAW = [
 
@@ -549,20 +549,46 @@ const ARTICLES_RAW = [
   title:"The Attention Equation", date:"December 20th 2026",
   excerpt:"An excerpt from McKinsey's article on the value of Consumer attention.",
   content:`
-<p>This came out of a trendspotting research exercise, and what caught my attention is how valuable our attention actually is — and who’s sitting on the other side calculating all of it.</p>
+<p>This came out of a trendspotting research exercise, and what caught my attention is how valuable our attention actually is â and whoâs sitting on the other side calculating all of it.</p>
 
-<p>McKinsey surveyed 7,000 consumers and built what they’re calling an “attention equation” — the idea being that attention isn’t just time spent, it’s the quality of that time. And the disparity is wild. An hour of your attention at a live sports event is worth $33. A newspaper gets $1.79. A podcast gets $0.05. Social media sits at $0.25. The same hour, entirely different economic value, depending on how focused you actually are and why you’re consuming it.</p>
+<p>McKinsey surveyed 7,000 consumers and built what theyâre calling an âattention equationâ â the idea being that attention isnât just time spent, itâs the quality of that time. And the disparity is wild. An hour of your attention at a live sports event is worth $33. A newspaper gets $1.79. A podcast gets $0.05. Social media sits at $0.25. The same hour, entirely different economic value, depending on how focused you actually are and why youâre consuming it.</p>
 
 <h2>Presence Over Passive</h2>
 
-<p>Nobody is just watching one thing anymore — and the data knows it. Programming executives are literally telling writers to assume viewers are on two screens at once. For brands, this changes everything about how content gets made. You can’t just show up in a space anymore, you have to earn the focused second. That means shorter hooks, content designed to pull you back from your second screen, and ads that actually match the mood of what you’re already watching — not interrupt it. A 10% increase in focus is tied to a 17% increase in spend. The fix isn’t more content. It’s smarter placement, better context, and understanding that distracted attention and present attention aren’t the same product at all.</p>
+<p>Nobody is just watching one thing anymore â and the data knows it. Programming executives are literally telling writers to assume viewers are on two screens at once. For brands, this changes everything about how content gets made. You canât just show up in a space anymore, you have to earn the focused second. That means shorter hooks, content designed to pull you back from your second screen, and ads that actually match the mood of what youâre already watching â not interrupt it. A 10% increase in focus is tied to a 17% increase in spend. The fix isnât more content. Itâs smarter placement, better context, and understanding that distracted attention and present attention arenât the same product at all.</p>
 
-<p>For further reading on the “Attention Equation”, see <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-attention-equation-winning-the-right-battles-for-consumer-attention" target="_blank">McKinsey’s full article</a>.</p>
-` }];
+<p>For further reading on the âAttention Equationâ, see <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-attention-equation-winning-the-right-battles-for-consumer-attention" target="_blank">McKinseyâs full article</a>.</p>
+` },
+
+{ id:3, col:5, row:6, categories:["Research","Projects"],
+  title:"Spirited Stories", date:"November 2024",
+  excerpt:"Tracing the almost parallel journeys of Feni and Whiskey for a Feni branding project.",
+  content:`
+<p>Every spirit begins as a local story. Some remain woven into the everyday lives of the people who make them, shared at celebrations, poured during festivals, and occasionally prescribed as a cure for more than just <em>“bad times”.</em> Others find a way to travel across oceans, generations, and cultures. Somewhere between the orchards of Goa and the Highlands of Scotland lie two spirits with remarkably similar beginnings- one just more widely known than the other.</p>
+<h2>A fruit that's almost never eaten, a drink waiting to be discovered.</h2>
+<p>Sweet, fragrant, and highly perishable, the cashew apple often plays second fiddle to the nut it carries. Yet in Goa, what would otherwise be agricultural waste is transformed into one of India's oldest distilled spirits.
+While coconut Feni is Goa's original indigenous spirit, cashew Feni emerged after the Portuguese introduced cashew trees from Brazil in the 16th century. Traditionally, naturally fallen cashew apples are collected, fermented without added yeast, and distilled in copper stills, a practice that continues among many artisanal producers today.</p>
+<img class="article-img" src="https://media.assettype.com/gomantaktimes/2023-04/8d0e531a-efe9-4d9f-a737-44246b56e1b7/DSCF7685.jpg" alt="Cashew Apple crushing process for Feni.">
+<p class="article-img-caption">Only ripe cashew apples are crushed to extract their juice before natural fermentation begins.</p>
+<p>India is the <strong>world's largest producer of cashew</strong>, yet much of the cashew apple is still discarded because of its short shelf life. In 2009, Cashew Feni became the first Indian spirit to receive a Geographical Indication (GI) tag, protecting its origin and production methods. While brands like Cazulo, Madel, and Sōzye are beginning to reshape its image, authentic Feni remains largely confined to Goa.</p>
+<h2>The birth of an icon</h2>
+<p>Scotch wasn't always synonymous with luxury.</p>
+<p>For centuries it was distilled in remote Highland communities, often illegally to avoid heavy taxation. Its rise came through equal parts innovation and circumstance. Blended whisky introduced consistency, industrial bottling improved quality, and expanding railway networks and British trade routes carried it across continents. Then came an unexpected advantage. The phylloxera epidemic of the late nineteenth century devastated Europe's vineyards, creating a global demand for Scotch as French brandy and cognac became scarce.</p>
+<img class="article-img" src="https://media.scotchwhisky.com/images/media/b6026024ca4cc932ed2522ab486bebf1.jpg" alt="">
+<p class="article-img-caption">Scotch began as a regional spirit before finding a global audience. Above is an image of the now demolishes Stromness distillery closed in the 1920s.</p>
+<p>Whisky's reputation extended beyond the bottle. It was prescribed as medicine, advertised as restorative, and often found its way into the hands of influential figures through medical exemptions.</p>
+<img class="article-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyWOGo9Gd1b2d0ZQiaumyumQtw9A_R1TxiT_vVmh7GkGI2lzRVBcxkho&s=10" alt="Winston Churchill's medical certificate prescribing scotch for his ailments.">
+<p class="article-img-caption">Alcohol occupied an unusual place in early twentieth-century medicine, blurring the line between prescription and privilege.</p>
+<h2>But, what next?</h2>
+<p>The parallels are hard to ignore. Each spirit was born from local agriculture, shaped by generations of inherited craft, and deeply rooted in the identity of its region.</p>
+<p>Scotch's story didn't stop at the distillery. It benefited from centuries of standardisation, industrialisation, export networks, and relentless storytelling, not to mention a vineyard epidemic that unexpectedly shifted the world's drinking habits in its favour.</p>
+<p>I think Feni's next chapter lies in visibility. The craft exists, its heritage is protected, and there are countless stories waiting to be told. Better branding, contemporary cocktail culture, and a growing number of bars in Goa are already reimagining Feni for younger audiences. Perhaps that's all Feni has ever needed, not a new recipe, but a story that travels just as well as the spirit itself.</p>
+` }
+];
 
 const ARTICLES = ARTICLES_RAW.map(a=>Object.assign({},a,colRowToRxRy(a.col,a.row)));
 
-// ─── PATH ANCHORS ─────────────────────────────────────────────────
+// âââ PATH ANCHORS âââââââââââââââââââââââââââââââââââââââââââââââââ
 const ANCHORS_RAW={
   Research:    {start:{col:.1,row:1},  end:{col:10.5,row:4.5}},
   Reflections: {start:{col:.1,row:6.5},end:{col:10.5,row:3}},
@@ -575,7 +601,7 @@ Object.keys(ANCHORS_RAW).forEach(cat=>{
   PATH_ANCHORS[cat]={start:{rx:(s.col-1)/9,ry:(s.row-1)/9},end:{rx:(e.col-1)/9,ry:(e.row-1)/9}};
 });
 
-// ─── NODE ANIMATION ───────────────────────────────────────────────
+// âââ NODE ANIMATION âââââââââââââââââââââââââââââââââââââââââââââââ
 const NODE_ANIM={};
 ARTICLES.forEach(a=>{
   NODE_ANIM[a.id]={ampY:9+Math.random()*12,ampX:2+Math.random()*4,
@@ -583,7 +609,7 @@ ARTICLES.forEach(a=>{
     phY:Math.random()*Math.PI*2,phX:Math.random()*Math.PI*2};
 });
 
-// ─── VIEWPORT HELPERS ─────────────────────────────────────────────
+// âââ VIEWPORT HELPERS âââââââââââââââââââââââââââââââââââââââââââââ
 const PT=55,PB=120;
 function vpRange(){return window.innerHeight-PT-PB;}
 function articlePx(a,time,noAnim){
@@ -595,7 +621,7 @@ function articlePx(a,time,noAnim){
 function anchorPx(anchor){const W=window.innerWidth,R=vpRange();return{x:anchor.rx*W,y:PT+anchor.ry*R};}
 function screenToRel(sx,sy){const W=window.innerWidth,R=vpRange();return{rx:Math.max(0,Math.min(1,sx/W)),ry:Math.max(0,Math.min(1,(sy-PT)/R))};}
 
-// ─── PATH BUILDING ────────────────────────────────────────────────
+// âââ PATH BUILDING ââââââââââââââââââââââââââââââââââââââââââââââââ
 function buildPath(cat,time,noAnim){
   const arts=ARTICLES.filter(a=>a.categories.includes(cat)).sort((a,b)=>a.rx-b.rx);
   const an=PATH_ANCHORS[cat];
@@ -605,7 +631,7 @@ function buildPath(cat,time,noAnim){
   return[sp,...waypoints,ep];
 }
 
-// ─── SPLINE ───────────────────────────────────────────────────────
+// âââ SPLINE âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function drawSmoothPath(ctx,pts){
   if(pts.length<2)return;ctx.beginPath();ctx.moveTo(pts[0].x,pts[0].y);
   for(let i=0;i<pts.length-1;i++){
@@ -614,7 +640,7 @@ function drawSmoothPath(ctx,pts){
   }ctx.stroke();
 }
 
-// ─── DRAWING ──────────────────────────────────────────────────────
+// âââ DRAWING ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function drawNode(ctx,x,y,article,isHov,isDragged,dim=1){
   const cats=article.categories,r=isDragged?10:isHov?8.5:6.5;
   cats.forEach((cat,i)=>{const rr=r+5+i*6;ctx.beginPath();ctx.ellipse(x,y,rr+2,rr-1,.3+i*.45,0,Math.PI*2);ctx.strokeStyle=CAT_COLORS[cat];ctx.lineWidth=isHov||isDragged?1.5:1.1;ctx.globalAlpha=(isHov||isDragged?.72:.38)*dim;ctx.stroke();ctx.globalAlpha=1;});
@@ -628,7 +654,7 @@ function drawAnchorNode(ctx,x,y,cat,isHov,dim=1){
   ctx.beginPath();ctx.moveTo(x-r*.4,y);ctx.lineTo(x+r*.4,y);ctx.moveTo(x,y-r*.4);ctx.lineTo(x,y+r*.4);ctx.lineWidth=1;ctx.stroke();ctx.globalAlpha=1;
 }
 
-// ─── CANVAS ───────────────────────────────────────────────────────
+// âââ CANVAS âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 const canvas=document.getElementById('map-canvas');
 const ctx=canvas.getContext('2d');
 let time=0,animFrame=null;
@@ -640,7 +666,7 @@ function resizeCanvas(){
   ctx.scale(dpr,dpr);
 }
 
-// ─── GUIDE ────────────────────────────────────────────────────────
+// âââ GUIDE ââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 let guideMode=false,mousePxX=-1,mousePxY=-1;
 function toggleGuide(){guideMode=!guideMode;document.getElementById('pos-guide-btn').classList.toggle('on',guideMode);}
 function drawPositionGuide(ctx){
@@ -662,7 +688,7 @@ function drawPositionGuide(ctx){
   }ctx.textAlign='left';
 }
 
-// ─── STATE ────────────────────────────────────────────────────────
+// âââ STATE ââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 let currentView='map',prevView='map';
 let hoveredArticle=null,cardPinned=false,cardArticle=null;
 let nodeDragging=null,hoveredHandle=null;
@@ -675,7 +701,7 @@ function getHitNode(mx,my){
   return null;
 }
 
-// ─── RENDER ───────────────────────────────────────────────────────
+// âââ RENDER âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderMap(){
   time+=.007;const w=window.innerWidth,h=window.innerHeight;ctx.clearRect(0,0,w,h);
   if(guideMode)drawPositionGuide(ctx);
@@ -695,7 +721,7 @@ function renderMap(){
     const isHov=!isDragged&&hoveredArticle&&hoveredArticle.id===a.id;
     const pos=articlePx(a,time,isDragged);nodePos[a.id]=pos;
     // Small independent bounce: node bobs slightly above/below its path position.
-    // This is purely visual — it doesn't change where the path routes.
+    // This is purely visual â it doesn't change where the path routes.
     const bounce = isDragged ? 0 : 3.5 * Math.sin(time * 1.9 + NODE_ANIM[a.id].phY + a.id * 0.7);
     const dim=legendHoveredCat&&!a.categories.includes(legendHoveredCat)?0.5:1;
     drawNode(ctx,pos.x,pos.y + bounce,a,isHov,isDragged,dim);
@@ -703,7 +729,7 @@ function renderMap(){
   if(currentView==='map')animFrame=requestAnimationFrame(renderMap);
 }
 
-// ─── MOUSE ────────────────────────────────────────────────────────
+// âââ MOUSE ââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 canvas.addEventListener('mousemove',e=>{
   mousePxX=e.clientX;mousePxY=e.clientY;
   if(nodeDragging){
@@ -733,7 +759,7 @@ canvas.addEventListener('mousedown',e=>{
   };
   const onUp=ev=>{
     if(!dragMoved){const hit=mouseDownHit;if(hit&&hit.type==='article'){
-      // Single click → open article directly
+      // Single click â open article directly
       openArticle(hit.article); cardPinned=false;
     }else{cardPinned=false;hideCard();}}
     nodeDragging=null;mouseDownHit=null;dragMoved=false;canvas.style.cursor='default';
@@ -747,7 +773,7 @@ canvas.addEventListener('touchstart',e=>{e.preventDefault();const t=e.touches[0]
 canvas.addEventListener('touchmove',e=>{e.preventDefault();const t=e.touches[0];if(Math.hypot(t.clientX-touchX,t.clientY-touchY)>5)touchMoved=true;if(touchMoved&&touchHit){nodeDragging=touchHit;const rel=screenToRel(t.clientX,t.clientY);if(nodeDragging.type==='article'){nodeDragging.article.rx=rel.rx;nodeDragging.article.ry=rel.ry;}else{PATH_ANCHORS[nodeDragging.cat][nodeDragging.which].rx=rel.rx;PATH_ANCHORS[nodeDragging.cat][nodeDragging.which].ry=rel.ry;}}},{passive:false});
 canvas.addEventListener('touchend',e=>{e.preventDefault();if(!touchMoved&&touchHit&&touchHit.type==='article'){openArticle(touchHit.article);cardPinned=false;}else if(!touchMoved){cardPinned=false;hideCard();}nodeDragging=null;touchHit=null;touchMoved=false;},{passive:false});
 
-// ─── HOVER CARD ───────────────────────────────────────────────────
+// âââ HOVER CARD âââââââââââââââââââââââââââââââââââââââââââââââââââ
 const hoverCard=document.getElementById('hover-card');
 function showCard(a,mx,my){
   cardArticle=a;
@@ -767,7 +793,7 @@ function hideCard(){if(!cardPinned){hoverCard.classList.remove('visible');hovere
 document.getElementById('card-read-btn').onclick=()=>{if(cardArticle)openArticle(cardArticle);};
 hoverCard.addEventListener('mouseleave',()=>{if(!cardPinned)hideCard();});
 
-// ─── VIEW MANAGEMENT ─────────────────────────────────────────────
+// âââ VIEW MANAGEMENT âââââââââââââââââââââââââââââââââââââââââââââ
 function showView(view){
   prevView=currentView;currentView=view;
   // Reset scroll position for archive and article views
@@ -789,7 +815,7 @@ function showView(view){
   else cancelAnimationFrame(animFrame);
 }
 
-// ─── ARCHIVE ──────────────────────────────────────────────────────
+// âââ ARCHIVE ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 let activeFilter='all';
 function filterArticles(cat,btn){
   activeFilter=cat;
@@ -820,7 +846,7 @@ function renderArchiveGrid(){
   });
 }
 
-// ─── ARTICLE VIEW ─────────────────────────────────────────────────
+// âââ ARTICLE VIEW âââââââââââââââââââââââââââââââââââââââââââââââââ
 function openArticle(a){
   if (currentView !== 'article') prevView = currentView;
 
@@ -843,12 +869,12 @@ function openArticle(a){
   if (currentView !== 'article') {
     showView('article');
   } else {
-    // Already in article view — ensure side nav stays visible, pill stays hidden
+    // Already in article view â ensure side nav stays visible, pill stays hidden
     document.getElementById('side-nav').classList.add('visible');
     document.getElementById('compact-nav').classList.add('article-mode');
   }
 
-  // Reveal after layout is complete — double rAF ensures paint is done
+  // Reveal after layout is complete â double rAF ensures paint is done
   requestAnimationFrame(() => requestAnimationFrame(() => {
     el.scrollTop = 0;
     el.style.overflow = '';
@@ -863,21 +889,21 @@ function goBack(){
   showView(prevView==='article'?'map':prevView);
 }
 
-// ─── SEARCH ───────────────────────────────────────────────────────
+// âââ SEARCH âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function openSearch(){document.getElementById('search-overlay').classList.add('visible');setTimeout(()=>document.getElementById('search-input').focus(),50);doSearch('');}
 function closeSearch(){document.getElementById('search-overlay').classList.remove('visible');document.getElementById('search-input').value='';}
-function doSearch(q){const matches=q.length<1?ARTICLES:ARTICLES.filter(a=>a.title.toLowerCase().includes(q.toLowerCase())||a.excerpt.toLowerCase().includes(q.toLowerCase())||a.categories.some(c=>c.toLowerCase().includes(q.toLowerCase())));document.getElementById('search-results').innerHTML=matches.map(a=>`<div class="s-item" onclick="closeSearch();openArticle(ARTICLES.find(x=>x.id==${a.id}))"><span class="s-dot" style="background:${CAT_COLORS[a.categories[0]]}"></span><div><div class="s-title">${a.title}</div><div class="s-meta">${a.date} · ${a.categories.join(', ')}</div></div></div>`).join('');}
+function doSearch(q){const matches=q.length<1?ARTICLES:ARTICLES.filter(a=>a.title.toLowerCase().includes(q.toLowerCase())||a.excerpt.toLowerCase().includes(q.toLowerCase())||a.categories.some(c=>c.toLowerCase().includes(q.toLowerCase())));document.getElementById('search-results').innerHTML=matches.map(a=>`<div class="s-item" onclick="closeSearch();openArticle(ARTICLES.find(x=>x.id==${a.id}))"><span class="s-dot" style="background:${CAT_COLORS[a.categories[0]]}"></span><div><div class="s-title">${a.title}</div><div class="s-meta">${a.date} Â· ${a.categories.join(', ')}</div></div></div>`).join('');}
 document.getElementById('search-overlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeSearch();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();});
 
-// ─── INIT ─────────────────────────────────────────────────────────
+// âââ INIT âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 window.addEventListener('resize',resizeCanvas);
 resizeCanvas();
 renderArchiveGrid();
 document.getElementById('map-legend').classList.add('visible');
 document.getElementById('pos-guide-btn').classList.add('map-visible');
 
-// Legend dot hover → dim other categories on canvas
+// Legend dot hover â dim other categories on canvas
 document.querySelectorAll('.l-item').forEach(item=>{
   const cat=item.querySelector('.l-badge')?.textContent.trim();
   if(cat){
@@ -886,9 +912,9 @@ document.querySelectorAll('.l-item').forEach(item=>{
   }
 });
 
-// ── Compact pill nav: cycle through category colours ──
+// ââ Compact pill nav: cycle through category colours ââ
 const PILL_COLORS = [
-  'rgba(225,48,103,0.72)',   // Research — semi-transparent
+  'rgba(225,48,103,0.72)',   // Research â semi-transparent
   'rgba(168,193,189,0.72)',  // Reflections
   'rgba(254,125,20,0.72)',   // Lectures
   'rgba(151,158,19,0.72)'    // Projects
