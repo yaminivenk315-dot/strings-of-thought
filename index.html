@@ -541,9 +541,7 @@ const ARTICLES_RAW = [
 <p class="article-img-caption">The first published illustration of Tipu\u2019s Tiger in James Salmond\u2019s book of 1800</p>
 
 <p>For extra reading: <a href="https://www.vam.ac.uk/articles/tipus-tiger?srsltid=AfmBOorsp_9HLTrTemYDttrKcZxaUmojOT2ulJmUH0xwRzKcZLQEA01B" target="_blank">V&amp;A \u2014 Tipu\u2019s Tiger</a> and <a href="https://en.wikipedia.org/wiki/Tipu%27s_Tiger" target="_blank">Wikipedia</a>. To view the typeface project this research fed into, see <a href="https://www.behance.net/gallery/217016497/Huli-Vesha" target="_blank">Huli Vesha on Behance</a>.</p>
-` }
-
-,
+` },
 
 { id:2, col:3, row:3, categories:["Research","Lectures"],
   title:"The Attention Equation", date:"December 20th 2026",
@@ -583,7 +581,26 @@ While coconut Feni is Goa's original indigenous spirit, cashew Feni emerged afte
 <p>The parallels are hard to ignore. Each spirit was born from local agriculture, shaped by generations of inherited craft, and deeply rooted in the identity of its region.</p>
 <p>Scotch's story didn't stop at the distillery. It benefited from centuries of standardisation, industrialisation, export networks, and relentless storytelling, not to mention a vineyard epidemic that unexpectedly shifted the world's drinking habits in its favour.</p>
 <p>I think Feni's next chapter lies in visibility. The craft exists, its heritage is protected, and there are countless stories waiting to be told. Better branding, contemporary cocktail culture, and a growing number of bars in Goa are already reimagining Feni for younger audiences. Perhaps that's all Feni has ever needed, not a new recipe, but a story that travels just as well as the spirit itself.</p>
+` },
+
+{ id:4, col:8, row:5, categories:["Projects"],
+  title:"Designing Typography for Dyslexia", date:"December 2025",
+  excerpt:"An exploration into how typography, spacing, and accessibility guidelines reshape the reading experience, revealing that thoughtful design decisions can significantly reduce cognitive load for dyslexic learners.",
+  content:`
+<h2>Looking Beyond Aesthetics</h2>
+<p>After months of millenial blanding and its predictable typographic conventions, encountering our first dyslexia-friendly website was unexpectedly refreshing. Accustomed to condensed serif typefaces with tight letter and line spacing, we stumbled upon a design that embraced large, spacious text, where even a single word occupied significant screen space. The contrast in visual real estate was striking. One approach optimised typography for visual efficiency and aesthetics, while the other deliberately sacrificed compactness to reduce cognitive load.</p>
+<p>Rather than choosing a typeface because it "looked right," every decision had been made to make reading feel easier. To better understand this shift, we also explored<a href="https://geon.github.io/programming/2016/03/03/dsxyliea" target="_blank"> dyslexia simulators,</a> experiencing first-hand how challenging it can be to interpret dense text and visually similar letterforms.</p>
+<h2>Reading Between the Letters</h2>
+<p>One of the biggest discoveries was that readability extends far beyond font choice. Research consistently showed that increased line spacing reduces visual crowding, while slightly expanded letter spacing improves the distinction between neighbouring characters. Larger x-heights, open counters, longer ascenders and descenders, differentiated upright forms, and clearly distinguishable letter pairs such as b/d, p/q, and I/l/1 all contribute to smoother reading. Fonts like Dyslexia Mono, <a href="https://www.lexend.com/" target="_blank">Lexend</a>, <a href="https://dyslexiefont.com/en/" target="_blank">Dyslexie</a>, and <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible" target="_blank">Atkinson Hyperlegible</a> were all built around these principles, each using different approaches to improve legibility. For most readers these details pass unnoticed, but for someone with dyslexia they can reduce fatigue, improve reading speed, and make comprehension significantly easier.</p>
+<h2>Nessy- Website Case Study</h2>
+<p><a href="https://www.nessy.com/en-us" target="_blank">Nessy</a> stands out for its accessibility-first interface, designed specifically for children with dyslexia through an uncluttered layout, high contrast visuals, readable typography, generous spacing, and block-based content that reduces cognitive load.</p>
+<p>It simplifies navigation with a visual login system using emojis and a secret word instead of conventional usernames and passwords, while maintaining a separate, intuitive dashboard for parents and teachers to monitor progress and access resources.</p>
+<p>The platform enhances engagement through gamified learning, combining interactive lessons, animated content, immediate rewards, and personalized learning paths that adapt to each child's pace and ability, creating an educational experience that is simple, motivating, and easy to navigate.</p>
+<h2>A Reading System</h2>
+<p>The greatest takeaway was that accessibility is never the result of a single font. Typography works as a system where spacing, hierarchy, alignment, colour contrast, and content structure all contribute equally to readability. Every decision within JAMUN was therefore grounded in research rather than convention, ensuring that the interface adapted to its users instead of expecting users to adapt to the interface.</p>
+<p>The <a href="https://www.lexend.com/" target="_blank">Lexend Website</a> has some pretty cool stats, that you should most definitely check out.</p>
 ` }
+
 ];
 
 const ARTICLES = ARTICLES_RAW.map(a=>Object.assign({},a,colRowToRxRy(a.col,a.row)));
